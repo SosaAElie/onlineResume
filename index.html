@@ -4,12 +4,22 @@
         <title>Elie Ariza Sosa Portfolio</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body class = "funnel-display-normal">
         <header id = "header">
             <div>
-                <h1 id = "name">Elie Ariza-Sosa</h1>
+                <h1 id = "name">Elie Ariza-Sosa
+                    <ul class = "items contact-info">
+                        <li class  = "item"><a href="mailto:sosa.elie12@gmail.com"><img class = "logo" src = "images/mail-icon.png"></a></li>
+                        <li class  = "item"><a href="https://linkedin.com/in/elie-ariza-sosa-441a9326b"><img class = "small logo" src = "images/linkedin-logo.png"></a></li>
+                        <li class  = "item"><a href="https://github.com/SosaAElie"><img class = "small logo" src = "images/github-logo.png"></a></li>
+                    </ul>
+                </h1>
+                
                 <h3 id = "email">sosa.elie12@gmail.com</h3>
             </div>
 
@@ -34,10 +44,10 @@
                     <div class = "step-circle"></div>
                     <p class = "step-text">Core Competencies</p>
                 </div>
-                <div id = "contact-circle" class = "step">
+                <!-- <div id = "contact-circle" class = "step">
                     <div class = "step-circle"></div>
                     <p class = "step-text">Contact</p>
-                </div>
+                </div> -->
             </div>
             <div id = "progress-container">
                 <div id = "progress-bar"></div>
@@ -127,18 +137,48 @@
             </div>
             <div id = "core-competencies-content" class = "content">
                 <h2 class = "subheading">Core Competencies</h2>
-                <ul class = "items">
-                    <li class  = "item"></li>
-                </ul>
-            </div>
-            <div id = "contact-content" class = "content">
-                <ul class = "items contact-info">
-                    <li class  = "item"><a href="mailto:sosa.elie12@gmail.com"><img class = "logo" src = "images/mail-icon.png"></a></li>
-                    <li class  = "item"><a href="https://linkedin.com/in/elie-ariza-sosa-441a9326b"><img class = "small logo" src = "images/linkedin-logo.png"></a></li>
-                    <li class  = "item"><a href="https://github.com/SosaAElie"><img class = "small logo" src = "images/github-logo.png"></a></li>
-                </ul>
-            </div>
+                <div id = "core-competencies-content-container">
+                    <ul class = "items">
+                        <li class  = "item subtitle">Technical Skills</li>
+                        <li class  = "item">Lab Bench Skills</li>
+                        <li class  = "item">qPCR</li>
+                        <li class  = "item">ELISA</li>
+                        <li class  = "item">2D/3D Cell Culture</li>
+                        <li class  = "item">Western Blot</li>
+                        <li class  = "item">RNA Extraction</li>
+                    </ul>
+                    <ul class = "items">
+                        <li class  = "item subtitle">Software</li>
+                        <li class  = "item">Microsoft Excel, Word, Powerpoint</li>
+                        <li class  = "item">Google Sheets, Docs, Slides</li>
+                        <li class  = "item">GraphPad Prism</li>
+                    </ul>
+                    <ul class = "items">
+                        <li class  = "item subtitle">Strengths</li>
+                        <li class  = "item">Analytical Thinking</li>
+                        <li class  = "item">Research Work</li>
+                        <li class  = "item">Time Management</li>
+                        <li class  = "item">Clear Communication</li>
+                        <li class  = "item">Experiment Planning</li>
+                        <li class  = "item">Scientific Data Presentation</li>
+                    </ul>
+                    <ul class = "items">
+                        <li class  = "item subtitle">Languages</li>
+                        <li class  = "item">English - Native</li>
+                        <li class  = "item">Spanish - Native</li>
+                        <li class  = "item">Japanese - Beginner</li>
+                    </ul>
+                    <ul class = "items">
+                        <li class  = "item subtitle">Programming Languages</li>
+                        <li class  = "item">Python3</li>
+                        <li class  = "item">JavaScript/TypeScript</li>
+                        <li class  = "item">CSS, HTML</li>
+                        <li class  = "item">SQL</li>
+                        <li class  = "item">Google AppScript</li>
+                    </ul>
+                </div>
 
+                </div>
         </div>
         <script src="script.js" async defer></script>
     </body>

@@ -1,3 +1,10 @@
+.funnel-display-normal{
+    font-family: "Funnel Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
 body{
     margin: 0px;
 }
@@ -10,12 +17,14 @@ body{
     padding: 0px;
     background-color: white;
     justify-items: center;
+    /* border-style:solid; */
 }
 #name{
     font-size: 3rem;
     font-weight: lighter;
     margin:0px;
     padding: 0px;
+    display: inline;
 }
 #email{
     margin:0px;
@@ -48,15 +57,19 @@ body{
     border-width: 2px;
     border-style: solid;
     border-radius: 10px;
-    top:70%;
-    width: 100%;
+    top:78%;
+    width: 90%;
+    left:3%;
     margin: 0px;
     padding: 0px;
     z-index: -1;
 }
+.filled{
+    background-color: #57B9FF;
+}
 #progress-bar{
     background-color: #57B9FF;
-    width: 1%;
+    width: 0%;
     height: 100%;
     margin: 0px;
     padding: 0px;
@@ -90,6 +103,7 @@ body{
 }
 .content{
     width: 50%;
+    /* border-style:solid; */
 }
 .subtitle{
     font-weight: bolder;
@@ -97,19 +111,26 @@ body{
     font-size: large;
 }
 .contact-info{
+    margin: 0px;
+    padding: 0px;
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
 }
 .logo{
-    height: 80px;
-    width: 80px;
+    height: 40px;
+    width: 40px;
 }
 .small{
-    height: 60px;
-    width: 60px;
-    padding-top: 10px;
+    height: 30px;
+    width: 30px;
+    padding-top: 5px;
 }
-
-
+#core-competencies-content-container{
+    display: grid;
+    width: 70%;
+    justify-self: center;
+    grid-template-columns: 50% 50%;
+}
