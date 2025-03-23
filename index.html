@@ -8,7 +8,11 @@
     </head>
     <body>
         <header id = "header">
-            <h1 id = "name">Elie Ariza-Sosa</h1>
+            <div>
+                <h1 id = "name">Elie Ariza-Sosa</h1>
+                <h3 id = "email">sosa.elie12@gmail.com</h3>
+            </div>
+
             <div id = "steps-container">
                 <div id = "summary-circle" class = "step">
                     <div class = "step-circle"></div>
@@ -44,10 +48,9 @@
                 <h2 class = "subheading">Summary</h2>
                 <ul class = "items">
                     <li class = "item">
-                        Passion for STEM, specifically data analysis/data science. 
-                        1-2 years experience working in a research lab and developing 
-                        automations using Python & SQL as well as developing web 
-                        applications using TypeScript & NextJS.
+                        3 years experience in a high-throughput biotech lab performing 
+                        multiple assays and developing automations using Python & SQL 
+                        as well as developing web applications using TypeScript/JavaScript.
                     </li>
                 </ul>
             </div>
@@ -62,14 +65,64 @@
             </div>
             <div id = "experience-content" class = "content">
                 <h2 class = "subheading">Experience</h2>
+                <h3 class = "item subtitle">MIRIMUS INC., BROOKLYN, NY </h3>
                 <ul class = "items">
-                    <li class = "item subtitle">MIRIMUS INC., BROOKLYN, NY </li>
+                    <li class = "item subtitle">SENIOR RESEARCH ASSOCIATE | AUG 2024 - PRESENT</li>
+                    <li class = "item">Pancreas organoid cell culture for downstream testing in SYBR green qPCR & western blots.</li>
+                    <li class = "item">Single cell clone generation of mammalian cells containing an shRNA edit with a fluorescent protein marker for downstream testing.</li>
+                    <li class = "item">RNA extraction from mammalian tissues and mammalian cells by TRIzol method followed by subsequent cDNA synthesis and multiplex TaqMan qPCR.</li>
+                    <li class = "item">Developed a static web application using JavaScript that is currently hosted on Github Pages that improved and expedited protein quantification and SDS-PAGE sample preparation.</li>
+                    <li class = "item">Developed Python scripts to automate sample preparation using a liquid handling machine called Myra.</li>
+                    <li class = "item">Developed an always-on automated primer inventory tracking system using Python, a Raspberry Pi 2B, and Google AppScript to maintain and update primer information as orders are continuously placed by multiple technicians and scientists.</li>
+                    <li class = "item">Listed as a co-inventor in a therapeutic IFN patent.</li>
+                </ul>
+                <ul class = "items">
+                    <li class = "item subtitle">RESEARCH ASSOCIATE | MAY 2023 - AUG 2024</li>
+                    <li class = "item">Developed data processing pipeline using Python for large scale screening of human sera via ELISA.</li>
+                    <li class = "item">Developed a static web application using TypeScript, BootStrap, Next.JS and hosted on Netlify, to expedite LDT experiments to meet a strict deadline and save at least $8,000 on company expenditure.</li>
+                    <li class = "item">Prepared point-mutated plasmids of human IFNalpha2a in DH5-alpha competent E-Coli cells for downstream protein purification.</li>
+                    <li class = "item">Tested wildtype and many mutated human IFNalpha2a proteins in a luciferase assay to determine ineffectiveness of mutated protein relative to wildtype for therapeutic drug discovery.</li>
+                    <li class = "item">Worked in a small team to submit an ELISA LDT for the detection of anti-IFNalpha2a human autoantibodies.</li>
+                    <li class = "item">Worked in a small team to submit two multiplex rt-qPCR LDTs for the detection of respiratory pathogens and STI pathogens.</li>
+                </ul>
+                <ul class = "items">
+                    <li class = "item subtitle">ASSOCIATE CLINICAL LAB SHIFT MANAGER | JAN 2022 - APR 2023</li>
+                    <li class = "item">QC of saliva and nasal sample processing for the detection of SARS-CoV-2 virus.</li>
+                    <li class = "item">Oversaw sample accessioning, RNA extraction and rt-qPCR testing pipeline.</li>
+                    <li class = "item">Assisted in publishing client results.</li>
+                </ul>
+                <ul class = "items">
+                    <li class = "item subtitle">VIROLOGY/ACCESSIONING TECHNICIAN | SEPT 2021 - JAN 2022</li>
+                    <li class = "item">Worked cooperatively with the client support team to provide up-to-date sample information.</li>
+                    <li class = "item">Worked in a fast-paced environment that required high attention to detail.</li>
+                    <li class = "item">Scanned daily in thousands of samples during peak pandemic under appropriate client information.</li>
                 </ul>
             </div>
             <div id = "projects-content" class = "content">
                 <h2 class = "subheading">Projects</h2>
                 <ul class = "items">
-                    <li class  = "item"></li>
+                    <li class  = "item subtitle">ELISA LDT Software</li>
+                    <li class  = "item">
+                        Desktop software application developed to expedite processing of ELISA optical plate reader data. Interpolates values of unknowns from a set of standards using either linear regression, logarithmic regression or 5PL. Outputs excel file with analyzed data and associated scatter plot. Developed using open source Python libraries, OpenPyxl, NumPy, MatPlotLib, SciPy and PyQt5.
+                    </li>
+                </ul>
+                <ul class = "items">
+                    <li class  = "item subtitle"><a href="https://sosaaelie.github.io/PersonalR-DTools/">R&D Tools</a></li>
+                    <li class  = "item">
+                        Static web application developed to expedite protein quantification using a 96-well plate format as well prepare samples for SDS-PAGE using an automated liquid handler called Myra. Calculates relative gene expression values from qPCR results and provides users simple-to-understand diagrams and graphs of the results. Developed using JS, CSS and HTML, hosted using Github Pages.
+                    </li>
+                </ul>
+                <ul class = "items">
+                    <li class  = "item subtitle"><a href="https://rndautomation.netlify.app/">LDT R&D Tools</a></li>
+                    <li class  = "item">
+                        Static web application developed to circumvent third-party proprietary software associated with an RT-qPCR machine. Automates the production of 96-Well and 384-Well templates for use in RT-qPCR. Processes fluorescence data at each cycle to provide users with ct values based off of a threshold algorithm and a polynomial regression model. Developed using BootStrap, Next.JS and D3.JS, hosted on Netlify.
+                    </li>
+                </ul>
+                <ul class = "items">
+                    <li class  = "item subtitle">Delivery Package Scraper</li>
+                    <li class  = "item">
+                        Automation tool used to query UPS, FedEx, LaserShip/OnTrac APIs and scrape USPS webpage for package information and log it in an excel master sheet. Developed using open-source Python libraries, Selenium, OpenPyxl and Requests.
+                    </li>
                 </ul>
             </div>
             <div id = "core-competencies-content" class = "content">
@@ -79,9 +132,10 @@
                 </ul>
             </div>
             <div id = "contact-content" class = "content">
-                <h2 class = "subheading">Contact Info</h2>
-                <ul class = "items">
-                    <li class  = "item"></li>
+                <ul class = "items contact-info">
+                    <li class  = "item"><a href="mailto:sosa.elie12@gmail.com"><img class = "logo" src = "images/mail-icon.png"></a></li>
+                    <li class  = "item"><a href="https://linkedin.com/in/elie-ariza-sosa-441a9326b"><img class = "small logo" src = "images/linkedin-logo.png"></a></li>
+                    <li class  = "item"><a href="https://github.com/SosaAElie"><img class = "small logo" src = "images/github-logo.png"></a></li>
                 </ul>
             </div>
 
