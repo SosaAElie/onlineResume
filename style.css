@@ -7,6 +7,7 @@
 
 body{
     margin: 0px;
+    color:#1b263b;
 }
 #header{
     position: sticky;
@@ -18,10 +19,14 @@ body{
     background-color: white;
     justify-items: center;
     width: 100%;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    box-shadow: 0px 0px 5px 5px grey;
+    /* background-image: linear-gradient(to top, #e0e1dd,white); */
 }
 #name{
     font-size: 3rem;
-    font-weight: lighter;
+    font-weight:lighter;
     margin:0px;
     padding: 0px;
     display: inline;
@@ -47,10 +52,16 @@ body{
     justify-self: center;
     background-color: white;
     margin: 0px;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.step-circle:hover{
+    background-color: #778da9;
 }
 .step-text{
     text-wrap: nowrap;
     margin:0px;
+    font-weight: bold;
 }
 #progress-container{
     position: absolute;
@@ -66,16 +77,17 @@ body{
     z-index: -1;
 }
 .filled{
-    background-color: #57B9FF;
+    background-color: #415a77;
 }
 #progress-bar{
-    background-color: #57B9FF;
+    background-color: #415a77;
     width: 0%;
     height: 100%;
     margin: 0px;
     padding: 0px;
 }
 #resume-content{
+    /* background-color: #e0e1dd; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,7 +118,6 @@ body{
 }
 .content{
     width: 50%;
-
 }
 .subtitle{
     font-weight: bolder;
